@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "../node_modules/loopback-stats-mixin/dist",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Order": {
+    "dataSource": "db",
+    "public": true
+  }
+}
