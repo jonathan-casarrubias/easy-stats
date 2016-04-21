@@ -6,11 +6,6 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "type": {
-      "type": "string"
-    }
-  },
   "mixins": {
     "TimeStamp": true,
     "Stats": {
@@ -23,8 +18,23 @@
       }
     }
   },
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    }
+  },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
