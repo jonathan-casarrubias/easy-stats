@@ -1,5 +1,5 @@
 {
-  "name": "easy-stats-api",
+  "name": "easy-stats",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -27,5 +27,5 @@
     "type": "",
     "url": ""
   },
-  "description": "easy-stats-api"
+  "description": "easy-stats"
 }

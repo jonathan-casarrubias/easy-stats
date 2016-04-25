@@ -1,5 +1,5 @@
 {
-  "name": "easy-stats-api",
+  "name": "easy-stats",
   "version": "1.0.0",
   "dependencies": {
     "accepts": {
