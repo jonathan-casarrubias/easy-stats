@@ -1,6 +1,7 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "loopback-connector-mongodb",
+    "url": "mongodb://easy-stats:easy-stats@ds011902.mlab.com:11902/heroku_3326hwrl"
   }
 }

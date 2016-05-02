@@ -1,0 +1,19 @@
+{
+  "apps" : [
+    {
+      "name"      : "API",
+      "script"    : "app.js"
+    }
+
+  ],
+  "deploy" : {
+    "production" : {
+      "user" : "node",
+      "host" : "bekast.tv",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:repo.git",
+      "path" : "/var/www/production",
+      "post-deploy" : "pm2 startOrRestart ecosystem.json5 --env production"
+    }
+  }
+}

@@ -2,7 +2,8 @@
   "name": "angular2-seed",
   "version": false,
   "dependencies": {
-    "d3": "registry:npm/d3#3.0.0+20160211003958"
+    "d3": "registry:npm/d3#3.0.0+20160211003958",
+    "moment": "registry:npm/moment#2.10.5+20160211003958"
   },
   "ambientDependencies": {
     "es6-collections": "registry:dt/es6-collections#0.5.1+20160316155526",

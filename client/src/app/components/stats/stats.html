@@ -1,6 +1,2 @@
-<h1>Easy Stats</h1>
-<label for="customerId">Customer Id:</label>
-<input name="customerId" type="text" [(ngModel)]="customerId" placeholder="customerId" />
-<label for="range">Range:</label>
-<input name="range" type="text" [(ngModel)]="range" placeholder="range" />
-<button (click)="getStats()">Get Stats</button>
+<h1>Angular 2 Chart Component</h1>
+<area-chart *ngIf="areaChartConfig" [config]="areaChartConfig" [type]="range"></area-chart>
