@@ -1,19 +1,22 @@
 {
   "apps" : [
     {
-      "name"      : "API",
-      "script"    : "app.js"
+      "name"      : "easy-stats-fullstack",
+      "script"    : "server/server.js",
+      "env": {
+        "PORT": 3006,
+        "NODE_ENV": "production"
+      }
     }
-
   ],
   "deploy" : {
     "production" : {
-      "user" : "node",
-      "host" : "bekast.tv",
+      "user" : "jcasarrubias",
+      "host" : "optima-api.bundled.tech",
       "ref"  : "origin/master",
-      "repo" : "git@github.com:repo.git",
-      "path" : "/var/www/production",
-      "post-deploy" : "pm2 startOrRestart ecosystem.json5 --env production"
+      "repo" : "git@bitbucket.org:bekast/easy-stats.git",
+      "path" : "/var/www/easy-stats",
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json"
     }
   }
 }
