@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node .",
     "pretest": "jshint .",
-    "posttest": "nsp check"
+    "posttest": "nsp check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -19,7 +21,8 @@
     "loopback-datasource-juggler": "^2.39.0",
     "loopback-ds-timestamp-mixin": "^3.2.2",
     "loopback-stats-mixin": "^1.1.7",
-    "serve-favicon": "^2.0.1"
+    "serve-favicon": "^2.0.1",
+    "snyk": "^1.190.0"
   },
   "devDependencies": {
     "jshint": "^2.5.6",
@@ -29,5 +32,6 @@
     "type": "",
     "url": ""
   },
-  "description": "easy-stats"
+  "description": "easy-stats",
+  "snyk": true
 }
